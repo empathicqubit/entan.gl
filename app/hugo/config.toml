@@ -1,0 +1,5 @@
+baseURL = ""
+relativeurls = true
+languageCode = "en-us"
+title = "entan.gl"
+theme = "binario"
