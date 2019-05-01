@@ -1,0 +1,1 @@
+{{ .Get "src" | print (getenv "STATIC_BUCKET_PATH") "/" | replaceRE "([^:])/+" "$1/" }}

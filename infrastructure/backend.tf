@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "allons-y-alonzo"
-    prefix = "allons-me"
+    bucket = "heisenberg-is-an-unknown-quantity"
+    prefix = "entan-gl"
   }
 }

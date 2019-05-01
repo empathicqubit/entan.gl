@@ -57,7 +57,7 @@ resource "google_project_services" "services" {
   ]
 }
 
-resource "google_dns_managed_zone" "allons" {
+resource "google_dns_managed_zone" "entan" {
   project = "${google_project.project.id}"
   name = "${var.project_name}"
   dns_name = "${var.dns_name}."
@@ -67,8 +67,8 @@ resource "google_dns_managed_zone" "allons" {
 
 resource "google_dns_record_set" "a" {
   project = "${google_project.project.id}"
-  name = "${google_dns_managed_zone.allons.dns_name}"
-  managed_zone = "${google_dns_managed_zone.allons.id}"
+  name = "${google_dns_managed_zone.entan.dns_name}"
+  managed_zone = "${google_dns_managed_zone.entan.id}"
   type = "A"
   ttl = 3600
   rrdatas = [
@@ -81,8 +81,8 @@ resource "google_dns_record_set" "a" {
 
 resource "google_dns_record_set" "txt" {
   project = "${google_project.project.id}"
-  name = "${google_dns_managed_zone.allons.dns_name}"
-  managed_zone = "${google_dns_managed_zone.allons.id}"
+  name = "${google_dns_managed_zone.entan.dns_name}"
+  managed_zone = "${google_dns_managed_zone.entan.id}"
   type = "TXT"
   ttl = 3600
   rrdatas = [
@@ -96,8 +96,8 @@ resource "google_dns_record_set" "txt" {
 
 resource "google_dns_record_set" "txt_acme" {
   project = "${google_project.project.id}"
-  name = "_acme-challenge.${google_dns_managed_zone.allons.dns_name}"
-  managed_zone = "${google_dns_managed_zone.allons.id}"
+  name = "_acme-challenge.${google_dns_managed_zone.entan.dns_name}"
+  managed_zone = "${google_dns_managed_zone.entan.id}"
   type = "TXT"
   ttl = 3600
   rrdatas = [
@@ -109,8 +109,8 @@ resource "google_dns_record_set" "txt_acme" {
 
 resource "google_dns_record_set" "www_txt_acme" {
   project = "${google_project.project.id}"
-  name = "_acme-challenge.www.${google_dns_managed_zone.allons.dns_name}"
-  managed_zone = "${google_dns_managed_zone.allons.id}"
+  name = "_acme-challenge.www.${google_dns_managed_zone.entan.dns_name}"
+  managed_zone = "${google_dns_managed_zone.entan.id}"
   type = "TXT"
   ttl = 3600
   rrdatas = [
@@ -122,8 +122,8 @@ resource "google_dns_record_set" "www_txt_acme" {
 
 resource "google_dns_record_set" "www_a" {
   project = "${google_project.project.id}"
-  name = "www.${google_dns_managed_zone.allons.dns_name}"
-  managed_zone = "${google_dns_managed_zone.allons.id}"
+  name = "www.${google_dns_managed_zone.entan.dns_name}"
+  managed_zone = "${google_dns_managed_zone.entan.id}"
   type = "A"
   ttl = 3600
   rrdatas = [
@@ -136,8 +136,8 @@ resource "google_dns_record_set" "www_a" {
 
 resource "google_dns_record_set" "protonmail_domainkey" {
   project = "${google_project.project.id}"
-  name = "protonmail._domainkey.${google_dns_managed_zone.allons.dns_name}"
-  managed_zone = "${google_dns_managed_zone.allons.id}"
+  name = "protonmail._domainkey.${google_dns_managed_zone.entan.dns_name}"
+  managed_zone = "${google_dns_managed_zone.entan.id}"
   type = "TXT"
   ttl = 3600
   rrdatas = [
@@ -149,8 +149,8 @@ resource "google_dns_record_set" "protonmail_domainkey" {
 
 resource "google_dns_record_set" "protonmail_mx" {
   project = "${google_project.project.id}"
-  name = "${google_dns_managed_zone.allons.dns_name}"
-  managed_zone = "${google_dns_managed_zone.allons.id}"
+  name = "${google_dns_managed_zone.entan.dns_name}"
+  managed_zone = "${google_dns_managed_zone.entan.id}"
   type = "MX"
   ttl = 3600
   rrdatas = [
@@ -185,8 +185,8 @@ resource "google_storage_bucket_acl" "static_acl" {
   default_acl = "publicRead"
 }
 
-output "allons_me_nameservers" {
-  value = "${google_dns_managed_zone.allons.name_servers}"
+output "entan_gl_nameservers" {
+  value = "${google_dns_managed_zone.entan.name_servers}"
 }
 
 output "project_id" {

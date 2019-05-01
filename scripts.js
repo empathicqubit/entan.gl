@@ -3,12 +3,13 @@ const shell = require('shelljs');
 const scripts = {
     build: {
         frontend: () => {
-            process.env.STATIC_BUCKET_PATH = shell.exec('npm-run-all --silent tf:static_bucket_path').stdout;
-            shell.config.fatal == true;
-            shell.cd('app/frontend');
+            process.env.STATIC_BUCKET_PATH = shell.exec('npm-run-all --silent tf:static_bucket_path').stdout.trim();
+            console.log("STATIC_BUCKET_PATH", process.env.STATIC_BUCKET_PATH);
+            shell.config.fatal = true;
+            shell.cd('app/hugo');
             shell.exec('yarn install && npm-run-all build');
-            shell.rm('-rf', '../../artifacts/frontend');
-            shell.cp('-r', 'build ../../artifacts/frontend');
+            shell.rm('-rf', '../../artifacts/hugo');
+            shell.cp('-r', './public/', '../../artifacts/hugo/');
         },
     },
     deploy: {
@@ -17,6 +18,7 @@ const scripts = {
             shell.config.fatal = true;
             const gs = shell.exec('npm-run-all --silent tf:static_bucket_gs').stdout;
             shell.exec(`gsutil -m rsync app/bucket-files "${gs}"`);
+            shell.exec(`gsutil -m rsync "${gs}" app/bucket-files`);
         },
         frontend: () => {
             shell.config.fatal = true;

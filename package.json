@@ -19,7 +19,7 @@
         "destroy": "cd infrastructure && terraform init && terraform destroy"
     },
     "devDependencies": {
-        "firebase-tools": "^3.18.6",
+        "firebase-tools": "^6.7.1",
         "npm-run-all": "^4.1.3",
         "shelljs": "^0.8.2",
         "shx": "^0.3.0",

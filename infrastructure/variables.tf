@@ -1,9 +1,9 @@
 variable "project_name" {
-  default = "allons-me"
+  default = "entan-gl"
 }
 
 variable "dns_name" {
-  default = "allons.me"
+  default = "entan.gl"
 }
 
 variable "region" {
