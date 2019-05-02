@@ -3,3 +3,13 @@ relativeurls = true
 languageCode = "en-us"
 title = "entan.gl"
 theme = "binario"
+
+[params]
+    customCSS = [
+        "css/mine.css"
+    ]
+
+[menus]
+    [[menus.main]]
+    name = "Test link to favorite Youtuber"
+    url = "https://www.youtube.com/channel/UC8uT9cgJorJPWu7ITLGo9Ww"

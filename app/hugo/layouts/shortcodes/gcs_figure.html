@@ -1,0 +1,4 @@
+<figure style="{{ print (.Get "style") " max-width: " (.Get "width") "px;" | safeCSS }}" class="{{ .Get "class" }}">
+    <img src="{{ .Get "src" | print (getenv "STATIC_BUCKET_PATH") "/" | replaceRE "([^:])/+" "$1/" }}" />
+    <figcaption>{{ .Get "caption" | markdownify }}</figcaption>
+</figure>

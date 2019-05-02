@@ -4,7 +4,7 @@
     "scripts": {
         "gitmodules": "git submodule init && git submodule update",
         "hugo": "cd app/hugo && yarn --silent hugo",
-        "hugo:drafts": "cd app/hugo && yarn drafts",
+        "hugo:drafts": "node ./scripts.js hugo:drafts",
         "hugo:start": "cd app/hugo && yarn start",
         "hugo:yarn": "cd app/hugo && yarn",
         "build": "shx mkdir -p artifacts && npm-run-all --parallel build:*",

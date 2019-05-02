@@ -1,10 +1,13 @@
 const shell = require('shelljs');
 
+getStaticBucketPath = () => {
+    process.env.STATIC_BUCKET_PATH = shell.exec('npm-run-all --silent tf:static_bucket_path').stdout.trim();
+    console.log("STATIC_BUCKET_PATH", process.env.STATIC_BUCKET_PATH);
+};
+
 const scripts = {
     build: {
         frontend: () => {
-            process.env.STATIC_BUCKET_PATH = shell.exec('npm-run-all --silent tf:static_bucket_path').stdout.trim();
-            console.log("STATIC_BUCKET_PATH", process.env.STATIC_BUCKET_PATH);
             shell.config.fatal = true;
             shell.cd('app/hugo');
             shell.exec('yarn install && npm-run-all build');
@@ -12,13 +15,19 @@ const scripts = {
             shell.cp('-r', './public/', '../../artifacts/hugo/');
         },
     },
+    hugo: {
+        drafts: () => {
+            shell.config.fatal = true;
+            shell.exec('cd app/hugo && yarn drafts');
+        },
+    },
     deploy: {
         static_bucket: () => {
             shell.mkdir('app/bucket-files');
             shell.config.fatal = true;
             const gs = shell.exec('npm-run-all --silent tf:static_bucket_gs').stdout;
-            shell.exec(`gsutil -m rsync app/bucket-files "${gs}"`);
-            shell.exec(`gsutil -m rsync "${gs}" app/bucket-files`);
+            shell.exec(`gsutil -m rsync -r app/bucket-files "${gs}"`);
+            shell.exec(`gsutil -m rsync -r "${gs}" app/bucket-files`);
         },
         frontend: () => {
             shell.config.fatal = true;
@@ -34,5 +43,7 @@ let current = scripts;
 path.forEach(p => {
     current = current[p];
 });
+
+getStaticBucketPath();
 
 current();

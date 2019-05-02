@@ -2,5 +2,5 @@
 .tern-port
 node_modules/
 artifacts/
-app/bucket-files/
+app/bucket-files
 .firebase
