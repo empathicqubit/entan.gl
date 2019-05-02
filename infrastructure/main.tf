@@ -108,7 +108,7 @@ resource "google_dns_record_set" "txt_acme" {
   type = "TXT"
   ttl = 3600
   rrdatas = [
-    "\"KKQe3w-pc-3Hn9fyTeqwhtF_Y8zAgRUx--r6_lWlZyk\""
+    "\"3LffUPXXwdsEARLt2l9fwZyqHgGJ5N7EXPiaZJpuvQQ\""
   ]
 
   depends_on = ["google_project_services.services"]
@@ -121,7 +121,7 @@ resource "google_dns_record_set" "www_txt_acme" {
   type = "TXT"
   ttl = 3600
   rrdatas = [
-    "\"-fi694GD4hT0HvDgf2zR5wESHhgpJHQuJxaFFFmvqJg\""
+    "\"sy0wZQ9y89wxf3v1Fxs5aprOzQ33xTF5UcJnGtuyy6I\""
   ]
 
   depends_on = ["google_project_services.services"]
