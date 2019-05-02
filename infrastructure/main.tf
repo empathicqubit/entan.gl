@@ -54,6 +54,13 @@ resource "google_project_services" "services" {
 		"storage-api.googleapis.com",
 		"sql-component.googleapis.com",
 		"datastore.googleapis.com",
+    "mobilecrashreporting.googleapis.com",
+    "runtimeconfig.googleapis.com",
+    "pubsub.googleapis.com",
+    "firebaseinstallations.googleapis.com",
+    "cloudresourcemanager.googleapis.com",
+    "cloudfunctions.googleapis.com",
+    "firebasehosting.googleapis.com",
   ]
 }
 
@@ -86,9 +93,9 @@ resource "google_dns_record_set" "txt" {
   type = "TXT"
   ttl = 3600
   rrdatas = [
-    "\"protonmail-verification=1d03de4983212df89a559a5c8664dfcb072b058a\"",
+    "\"protonmail-verification=934c6bf9c3dc99f0b1d88d3e6cbaffeab9ca87be\"",
     "\"v=spf1 include:_spf.protonmail.ch mx ~all\"",
-    "\"google-site-verification=3RsL8VG2-1WMGQ2HTvYrdHQt-3wty2WZCHyh5sSF9oQ\"",
+    "\"google-site-verification=uFJqOMJi0QRi6kYJ_P3CJ6NiwhA_vXYfrVgHuOmyzjk\"",
   ]
 
   depends_on = ["google_project_services.services"]
@@ -141,7 +148,7 @@ resource "google_dns_record_set" "protonmail_domainkey" {
   type = "TXT"
   ttl = 3600
   rrdatas = [
-    "\"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDO/g8MVlMjls6y3m0bnrzTLTVOpi38URkyrXbPnHAHn/ZhbxR+DfcIvhgdeyw62ldzyMv5+KMPKxsSql1W/o5y8Yo+g5D4o9ctHJn/5yTmYLFz3GGBGrV2JgHMzxqRNYXqZPa3xwhaauhoN7L/FaSTPGiwcG7BH5HQ6UKY6Na3cQIDAQAB\"",
+    "\"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJFwt2N9k7yhOsd7Ri1+4WgYgldMDjaibsojUtmBvj5WGICWc1ELitDiuITykvKNV2HETmeEoUePb9VhhX0X5V6/fQeHvuH9e8KMDriSoSS7Z5OgYM3GFlVpo2Qycnf+bQ0m1BUvKuxQPXScU7X7J3hiiBcM4vHgsQ6D+miz69SQIDAQAB\"",
   ]
 
   depends_on = ["google_project_services.services"]
