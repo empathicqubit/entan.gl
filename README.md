@@ -1,4 +1,4 @@
-# allons.me
+# entan.gl
 This project is to deploy my personal website. It probably will be extremely painful for you to deploy yourself because of all the tweaks you'd need to make.
 
 ## Deployment steps
