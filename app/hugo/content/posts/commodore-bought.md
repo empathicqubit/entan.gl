@@ -25,7 +25,7 @@ Recently, I found out about the platforming game [VVVVVV](https://thelettervsixt
 
 I had bought the game on my Nintendo Switch and found it teeth-gnashingly hard, but for some reason, even though I died hundreds of times I enjoyed it immensely. Even difficult areas like Veni, Vidi, Vici (picture to the right) were no match for my full determination.
 
-Even more recently, I've started watching restoration videos by the 8-Bit Guy, and seeing his amazing work and his explanations of the hardware made me really excited about their legacies, especially the Commodore computers.
+Even more recently, I've started watching restoration videos by the [8-Bit Guy](https://www.youtube.com/channel/UC8uT9cgJorJPWu7ITLGo9Ww), and seeing his amazing work and his explanations of the hardware made me really excited about their legacies, especially the Commodore computers.
 
 Now I'm in the process of obtaining a Commodore from eBay. I bought some extra accessories to go with it as well:
 
