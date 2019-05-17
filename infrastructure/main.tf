@@ -148,7 +148,7 @@ resource "google_dns_record_set" "protonmail_domainkey" {
   type = "TXT"
   ttl = 3600
   rrdatas = [
-    "\"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJFwt2N9k7yhOsd7Ri1+4WgYgldMDjaibsojUtmBvj5WGICWc1ELitDiuITykvKNV2HETmeEoUePb9VhhX0X5V6/fQeHvuH9e8KMDriSoSS7Z5OgYM3GFlVpo2Qycnf+bQ0m1BUvKuxQPXScU7X7J3hiiBcM4vHgsQ6D+miz69SQIDAQAB\"",
+    "\"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDNIrbagKBgtO4RP+wJMXQhY2VXbCeBwKikUA6wT/BiZGgs1oVo0WjSAQ6rnvekk56AF6U1unQMDLBtWu226G6AWoenyTlUSOxB/lYfHkTEb138De4g2rBLyexz2zuFem/zNpj/2MWk4UeRh7NYPHbuaJA/uivpRDfC5k84RqonwwIDAQAB\"",
   ]
 
   depends_on = ["google_project_services.services"]
