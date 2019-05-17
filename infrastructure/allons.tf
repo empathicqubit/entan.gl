@@ -43,9 +43,8 @@ resource "google_dns_record_set" "allons_txt" {
   rrdatas = [
     "\"protonmail-verification=1d03de4983212df89a559a5c8664dfcb072b058a\"",
     "\"v=spf1 include:_spf.protonmail.ch mx ~all\"",
-    "\"google-site-verification=3RsL8VG2-1WMGQ2HTvYrdHQt-3wty2WZCHyh5sSF9oQ\"",
+    "\"google-site-verification=GNEfQ-ulAryx9bsaINnBwdeZSIC0ZNB37qV_n_rzXoc\"",
   ]
-
   depends_on = ["google_project_services.services"]
 }
 
