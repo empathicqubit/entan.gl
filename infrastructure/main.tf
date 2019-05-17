@@ -86,6 +86,20 @@ resource "google_dns_record_set" "a" {
   depends_on = ["google_project_services.services"]
 }
 
+resource "google_dns_record_set" "www_a" {
+  project = "${google_project.project.id}"
+  name = "www.${google_dns_managed_zone.entan.dns_name}"
+  managed_zone = "${google_dns_managed_zone.entan.id}"
+  type = "A"
+  ttl = 3600
+  rrdatas = [
+    "151.101.1.195",
+    "151.101.65.195",
+  ]
+
+  depends_on = ["google_project_services.services"]
+}
+
 resource "google_dns_record_set" "txt" {
   project = "${google_project.project.id}"
   name = "${google_dns_managed_zone.entan.dns_name}"
@@ -122,20 +136,6 @@ resource "google_dns_record_set" "www_txt_acme" {
   ttl = 3600
   rrdatas = [
     "\"sy0wZQ9y89wxf3v1Fxs5aprOzQ33xTF5UcJnGtuyy6I\""
-  ]
-
-  depends_on = ["google_project_services.services"]
-}
-
-resource "google_dns_record_set" "www_a" {
-  project = "${google_project.project.id}"
-  name = "www.${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
-  type = "A"
-  ttl = 3600
-  rrdatas = [
-    "151.101.1.195",
-    "151.101.65.195",
   ]
 
   depends_on = ["google_project_services.services"]
