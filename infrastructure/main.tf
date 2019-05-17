@@ -93,7 +93,7 @@ resource "google_dns_record_set" "txt" {
   type = "TXT"
   ttl = 3600
   rrdatas = [
-    "\"protonmail-verification=934c6bf9c3dc99f0b1d88d3e6cbaffeab9ca87be\"",
+    "\"protonmail-verification=49f0d657d599dce9175c77f6803c67b9faf2e5f6\"",
     "\"v=spf1 include:_spf.protonmail.ch mx ~all\"",
     "\"google-site-verification=uFJqOMJi0QRi6kYJ_P3CJ6NiwhA_vXYfrVgHuOmyzjk\"",
   ]
