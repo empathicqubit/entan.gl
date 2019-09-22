@@ -5,11 +5,15 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "hugo-bin": "^0.43.3"
+    "hugo-bin": "^0.43.3",
+    "npm-run-all": "^4.1.5"
   },
   "scripts": {
-      "drafts": "hugo server -D --bind 0.0.0.0",
-      "start": "hugo server --bind 0.0.0.0",
-      "build": "hugo"
+    "drafts": "hugo server -D --bind 0.0.0.0",
+    "start": "hugo server --bind 0.0.0.0",
+    "build": "hugo",
+    "icon": "icon () { convert -background none ./static/knot.svg -scale \"$1x$1\" \"static/icons/$1.png\" ; } && icon",
+    "icons": "npm-run-all --parallel \"icon 16\" \"icon 32\" \"icon 64\" \"icon 128\" \"icon 256\" \"icon 512\"",
+    "favicon": "npm-run-all icons && convert $(for each in 16 32 64 128 256 512; do echo static/icons/$each.png ; done) static/favicon.ico"
   }
 }
