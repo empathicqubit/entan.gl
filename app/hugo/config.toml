@@ -13,3 +13,12 @@ theme = "binario"
     [[menus.main]]
     name = "Test link to favorite Youtuber"
     url = "https://www.youtube.com/channel/UC8uT9cgJorJPWu7ITLGo9Ww"
+
+[Params.Share]
+  facebook = true
+  twitter = true
+  reddit = true
+  telegram = true
+  linkedin = true
+  vk = true
+  pocket = true
