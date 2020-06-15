@@ -3,4 +3,5 @@
 node_modules/
 artifacts/
 app/bucket-files
+*.log
 .firebase
