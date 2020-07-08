@@ -2,6 +2,8 @@
 title: "Commodore Bought"
 date: 2019-05-05T06:00:35Z
 draft: false
+categories:
+    - commodore
 post-guide: |
     Useful shortcodes:
 

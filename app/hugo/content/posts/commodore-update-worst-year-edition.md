@@ -2,6 +2,8 @@
 title: "Commodore Update: Worst Year Edition"
 date: 2020-06-15T14:58:37-04:00
 draft: false
+categories:
+    - commodore
 post-guide: |
     Useful shortcodes:
 

@@ -3,6 +3,7 @@ relativeurls = true
 languageCode = "en-us"
 title = "entan.gl"
 theme = "binario"
+enableEmoji = true
 
 [params]
     customCSS = [
@@ -10,9 +11,17 @@ theme = "binario"
     ]
 
 [menus]
+
     [[menus.main]]
-    name = "Test link to favorite Youtuber"
-    url = "https://www.youtube.com/channel/UC8uT9cgJorJPWu7ITLGo9Ww"
+    name = "GitHub"
+    url = "https://github.com/empathicqubit"
+
+    [[menus.main]]
+    name = "Twitter"
+    url = "https://twitter.com/empathicqubit"
+
+[Params]
+  post_meta = ["date", "categories"] # Enable post meta fields in given order
 
 [Params.Share]
   facebook = true

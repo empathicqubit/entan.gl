@@ -10,6 +10,8 @@ post-guide: |
     <a href="{{<gcs src="path relative to static bucket root" >}}">Test GCS link</a>
 
     {{< cbm >}} Commodore logo bc why not?
+
+    date -uIs gives date in ISO UTC
 ---
 
 The summary.

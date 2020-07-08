@@ -2,6 +2,8 @@
 title: "C64 Ramblings"
 date: 2019-09-21T23:27:52-07:00
 draft: false
+categories:
+    - commodore
 post-guide: |
     Useful shortcodes:
 

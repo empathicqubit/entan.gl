@@ -31,6 +31,7 @@ resource "google_project" "project" {
 resource "google_project_services" "services" {
   project = "${google_project.project.id}"
   services = [
+    "bigquerystorage.googleapis.com",
 		"firebase.googleapis.com",
 		"firebasedynamiclinks.googleapis.com",
 		"firebaserules.googleapis.com",
