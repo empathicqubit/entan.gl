@@ -3,10 +3,9 @@
     "private": true,
     "scripts": {
         "gitmodules": "git submodule init && git submodule update",
-        "hugo": "cd app/hugo && yarn --silent hugo",
+        "hugo": "cd app/hugo && npm-run-all --silent hugo",
         "hugo:drafts": "node ./scripts.js hugo:drafts",
-        "hugo:start": "cd app/hugo && yarn start",
-        "hugo:yarn": "cd app/hugo && yarn",
+        "hugo:start": "cd app/hugo && npm-run-all start",
         "build": "shx mkdir -p artifacts && npm-run-all --parallel build:*",
         "build:frontend": "node ./scripts.js build:frontend",
         "deploy": "npm-run-all gitmodules tf build && npm-run-all --parallel deploy:*",
