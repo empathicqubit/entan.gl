@@ -11,6 +11,6 @@ There are a lot of manual DNS entries in the Terraform. I have not come up with 
 In the root folder:
 
 ```sh
-yarn install
-yarn deploy
+pnpm install
+pnpm deploy
 ```

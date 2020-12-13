@@ -10,7 +10,7 @@ const scripts = {
         frontend: () => {
             shell.config.fatal = true;
             shell.cd('app/hugo');
-            shell.exec('yarn install && npm-run-all build');
+            shell.exec('pnpm install && npm-run-all build');
             shell.rm('-rf', '../../artifacts/hugo');
             shell.cp('-r', './public/', '../../artifacts/hugo/');
         },
@@ -18,7 +18,7 @@ const scripts = {
     hugo: {
         drafts: () => {
             shell.config.fatal = true;
-            shell.exec('cd app/hugo && yarn drafts');
+            shell.exec('cd app/hugo && npm-run-all drafts');
         },
     },
     deploy: {
