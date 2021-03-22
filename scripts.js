@@ -1,4 +1,5 @@
 const shell = require('shelljs');
+shell.config.verbose = true;
 
 getStaticBucketPath = () => {
     process.env.STATIC_BUCKET_PATH = shell.exec('npm-run-all --silent tf:static_bucket_path').stdout.trim();
@@ -25,13 +26,13 @@ const scripts = {
         static_bucket: () => {
             shell.mkdir('app/bucket-files');
             shell.config.fatal = true;
-            const gs = shell.exec('npm-run-all --silent tf:static_bucket_gs').stdout;
+            const gs = shell.exec('npm-run-all --silent tf:static_bucket_gs').stdout.trim();
             shell.exec(`gsutil -m rsync -r app/bucket-files "${gs}"`);
             shell.exec(`gsutil -m rsync -r "${gs}" app/bucket-files`);
         },
         frontend: () => {
             shell.config.fatal = true;
-            const project_id = shell.exec('npm-run-all --silent tf:project_id').stdout;
+            const project_id = shell.exec('npm-run-all --silent tf:project_id').stdout.trim();
             shell.exec(`firebase deploy --only hosting --project ${project_id}`);
         },
     },

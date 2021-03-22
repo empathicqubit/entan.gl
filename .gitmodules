@@ -1,3 +1,9 @@
 [submodule "app/hugo/themes/binario"]
 	path = app/hugo/themes/binario
 	url = https://github.com/vimux/binario
+[submodule ".\\app\\ite8291"]
+	path = .\\app\\ite8291
+	url = https://github.com/empathicqubit/ite8291-backlight-browser
+[submodule "app/ite8291"]
+	path = app/ite8291
+	url = https://github.com/empathicqubit/ite8291-backlight-browser
