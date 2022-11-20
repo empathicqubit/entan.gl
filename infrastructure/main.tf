@@ -1,13 +1,13 @@
 provider "google" {
-  region = "${var.region}"
+  region = var.region
 }
 
 data "google_organization" "self" {
-  domain = "${var.dns_name}"
+  domain = var.dns_name
 }
 
 data "google_billing_account" "self" {
-  display_name = "${var.dns_name}"
+  billing_account = var.dns_name
   open = true
 }
 
@@ -16,40 +16,40 @@ resource "random_id" "project_id" {
   prefix = "${var.project_name}-"
 
   keepers = {
-    region = "${var.region}"
-    project_name = "${var.project_name}"
+    region = var.region
+    project_name = var.project_name
   }
 }
 
 resource "google_project" "project" {
-  name = "${var.project_name}"
-  project_id = "${random_id.project_id.hex}"
-  org_id = "${data.google_organization.self.org_id}"
-  billing_account = "${data.google_billing_account.self.id}"
+  name = var.project_name
+  project_id = random_id.project_id.hex
+  org_id = data.google_organization.self.org_id
+  billing_account = data.google_billing_account.self.id
 }
 
 resource "google_project_service" "firebase" {
-  project = "${google_project.project.id}"
+  project = google_project.project.id
   service = "firebase.googleapis.com"
 }
 
 resource "google_project_service" "dns" {
-  project = "${google_project.project.id}"
+  project = google_project.project.id
   service = "dns.googleapis.com"
 }
 
 resource "google_dns_managed_zone" "entan" {
-  project = "${google_project.project.id}"
-  name = "${var.project_name}"
+  project = google_project.project.id
+  name = var.project_name
   dns_name = "${var.dns_name}."
 
   depends_on = ["google_project_service.dns"]
 }
 
 resource "google_dns_record_set" "a" {
-  project = "${google_project.project.id}"
-  name = "${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
+  project = google_project.project.id
+  name = google_dns_managed_zone.entan.dns_name
+  managed_zone = google_dns_managed_zone.entan.id
   type = "A"
   ttl = 3600
   rrdatas = [
@@ -61,9 +61,9 @@ resource "google_dns_record_set" "a" {
 }
 
 resource "google_dns_record_set" "www_a" {
-  project = "${google_project.project.id}"
+  project = google_project.project.id
   name = "www.${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
+  managed_zone = google_dns_managed_zone.entan.id
   type = "A"
   ttl = 3600
   rrdatas = [
@@ -75,9 +75,9 @@ resource "google_dns_record_set" "www_a" {
 }
 
 resource "google_dns_record_set" "txt" {
-  project = "${google_project.project.id}"
-  name = "${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
+  project = google_project.project.id
+  name = google_dns_managed_zone.entan.dns_name
+  managed_zone = google_dns_managed_zone.entan.id
   type = "TXT"
   ttl = 3600
   rrdatas = [
@@ -90,9 +90,9 @@ resource "google_dns_record_set" "txt" {
 }
 
 resource "google_dns_record_set" "txt_acme" {
-  project = "${google_project.project.id}"
+  project = google_project.project.id
   name = "_acme-challenge.${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
+  managed_zone = google_dns_managed_zone.entan.id
   type = "TXT"
   ttl = 3600
   rrdatas = [
@@ -103,9 +103,9 @@ resource "google_dns_record_set" "txt_acme" {
 }
 
 resource "google_dns_record_set" "www_txt_acme" {
-  project = "${google_project.project.id}"
+  project = google_project.project.id
   name = "_acme-challenge.www.${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
+  managed_zone = google_dns_managed_zone.entan.id
   type = "TXT"
   ttl = 3600
   rrdatas = [
@@ -116,9 +116,9 @@ resource "google_dns_record_set" "www_txt_acme" {
 }
 
 resource "google_dns_record_set" "protonmail_domainkey1" {
-  project = "${google_project.project.id}"
+  project = google_project.project.id
   name = "protonmail._domainkey.${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
+  managed_zone = google_dns_managed_zone.entan.id
   type = "CNAME"
   ttl = 3600
   rrdatas = ["protonmail.domainkey.dao2ss6o57vvef6sdgmtww2uwym4wub3nndbqpqmasevtvbjix3aa.domains.proton.ch."]
@@ -127,9 +127,9 @@ resource "google_dns_record_set" "protonmail_domainkey1" {
 }
 
 resource "google_dns_record_set" "protonmail_domainkey2" {
-  project = "${google_project.project.id}"
+  project = google_project.project.id
   name = "protonmail._domainkey2.${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
+  managed_zone = google_dns_managed_zone.entan.id
   type = "CNAME"
   ttl = 3600
   rrdatas = ["protonmail2.domainkey.dao2ss6o57vvef6sdgmtww2uwym4wub3nndbqpqmasevtvbjix3aa.domains.proton.ch."]
@@ -138,9 +138,9 @@ resource "google_dns_record_set" "protonmail_domainkey2" {
 }
 
 resource "google_dns_record_set" "protonmail_domainkey3" {
-  project = "${google_project.project.id}"
+  project = google_project.project.id
   name = "protonmail._domainkey3.${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
+  managed_zone = google_dns_managed_zone.entan.id
   type = "CNAME"
   ttl = 3600
   rrdatas = ["protonmail3.domainkey.dao2ss6o57vvef6sdgmtww2uwym4wub3nndbqpqmasevtvbjix3aa.domains.proton.ch."]
@@ -149,9 +149,9 @@ resource "google_dns_record_set" "protonmail_domainkey3" {
 }
 
 resource "google_dns_record_set" "protonmail_mx" {
-  project = "${google_project.project.id}"
-  name = "${google_dns_managed_zone.entan.dns_name}"
-  managed_zone = "${google_dns_managed_zone.entan.id}"
+  project = google_project.project.id
+  name = google_dns_managed_zone.entan.dns_name
+  managed_zone = google_dns_managed_zone.entan.id
   type = "MX"
   ttl = 3600
   rrdatas = [
@@ -162,7 +162,7 @@ resource "google_dns_record_set" "protonmail_mx" {
 }
 
 resource "google_storage_bucket" "static" {
-  project = "${google_project.project.id}"
+  project = google_project.project.id
   name = "${random_id.project_id.hex}-static"
   force_destroy = true
 
@@ -171,7 +171,7 @@ resource "google_storage_bucket" "static" {
     method = ["GET", "HEAD", "OPTIONS"]
   }
 
-  location = "${var.region}"
+  location = var.region
   storage_class = "REGIONAL"
 
   website {
@@ -181,17 +181,17 @@ resource "google_storage_bucket" "static" {
 }
 
 resource "google_storage_bucket_acl" "static_acl" {
-  bucket = "${google_storage_bucket.static.id}"
+  bucket = google_storage_bucket.static.id
   predefined_acl = "publicRead"
   default_acl = "publicRead"
 }
 
 output "entan_gl_nameservers" {
-  value = "${google_dns_managed_zone.entan.name_servers}"
+  value = google_dns_managed_zone.entan.name_servers
 }
 
 output "project_id" {
-  value = "${google_project.project.id}"
+  value = google_project.project.id
 }
 
 output "static_bucket_path" {
