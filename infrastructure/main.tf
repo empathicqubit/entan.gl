@@ -7,7 +7,7 @@ data "google_organization" "self" {
 }
 
 data "google_billing_account" "self" {
-  billing_account = var.dns_name
+  display_name = var.dns_name
   open = true
 }
 
