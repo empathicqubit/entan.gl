@@ -1,7 +1,7 @@
 const shell = require('shelljs');
 
 const googleApplicationCredentialsPath = shell.exec(`gcloud info "--format=value(config.paths.global_config_dir)"`, { silent: true }).stdout.trim() + '/legacy_credentials/empathicqubit@entan.gl/adc.json';
-process.env.GOOGLE_APPLICATION_CREDENTIALS = googleApplicationCredentialsPath;
+process.env.GOOGLE_APPLICATION_CREDENTIALS = process.env.GOOGLE_APPLICATION_CREDENTIALS ?? googleApplicationCredentialsPath;
 
 getStaticBucketPath = () => {
     process.env.STATIC_BUCKET_PATH = shell.exec('npm-run-all --silent tf:static_bucket_path', { silent: true }).stdout.trim();
