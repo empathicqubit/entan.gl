@@ -10,16 +10,6 @@ enableEmoji = true
         "css/mine.css"
     ]
 
-[menus]
-
-    [[menus.main]]
-    name = "GitHub"
-    url = "https://github.com/empathicqubit"
-
-    [[menus.main]]
-    name = "Twitter"
-    url = "https://twitter.com/empathicqubit"
-
 [Params]
   post_meta = ["date", "categories"] # Enable post meta fields in given order
 
@@ -31,3 +21,9 @@ enableEmoji = true
   linkedin = true
   vk = true
   pocket = true
+
+[Params.Social]
+  twitter = "empathicqubit"
+  github = "empathicqubit"
+  mastodon = "empathicqubit@dizl.de"
+  reddit = "empathicqubit"
