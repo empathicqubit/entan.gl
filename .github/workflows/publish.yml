@@ -17,4 +17,5 @@ jobs:
       with:
         credentials_json: '${{ secrets.GOOGLE_CREDENTIALS_JSON }}'
     - uses: actions/checkout@v3
-    - run: npm run deploy
+    - run: pnpm install
+    - run: pnpm run deploy
