@@ -40,7 +40,7 @@ const scripts = {
             shell.config.fatal = true;
             const project_id = shell.exec('npm-run-all --silent tf:project_id').stdout.trim();
             console.log(process.env.GOOGLE_APPLICATION_CREDENTIALS);
-            shell.exec(`firebase deploy --only hosting --project ${project_id}`);
+            shell.exec(`firebase deploy --only hosting --project ${project_id}`, { env: { ...process.env } });
         },
     },
     tf: {
