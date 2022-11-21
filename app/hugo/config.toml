@@ -5,6 +5,11 @@ title = "entan.gl"
 theme = "binario"
 enableEmoji = true
 
+[[menus.main]]
+  name = "Mastodon"
+  url = "right"
+  rel = "me"
+
 [params]
     customCSS = [
         "css/mine.css"
