@@ -23,7 +23,7 @@ jobs:
     - run: pnpm run deploy
       continue-on-error: true
 
-    - id: 'auth'
+    - id: 'auth2'
       name: 'Authenticate to Google Cloud'
       uses: 'google-github-actions/auth@v0.4.0'
       with:
