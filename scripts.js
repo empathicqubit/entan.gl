@@ -40,7 +40,7 @@ const scripts = {
             shell.config.fatal = true;
             const project_id = shell.exec('npm-run-all --silent tf:project_id').stdout.trim();
             console.log(process.env.GOOGLE_APPLICATION_CREDENTIALS);
-            shell.exec(`firebase deploy --only hosting --project ${project_id}`, { env: { ...process.env } });
+            shell.exec(`firebase deploy --account terraform@terraform-admin-239402.iam.gserviceaccount.com --non-interactive --only hosting --project ${project_id}`);
         },
     },
     tf: {
