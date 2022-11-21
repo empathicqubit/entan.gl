@@ -5,11 +5,6 @@ title = "entan.gl"
 theme = "binario"
 enableEmoji = true
 
-[[menus.main]]
-  name = "Mastodon"
-  url = "right"
-  rel = "me"
-
 [params]
     customCSS = [
         "css/mine.css"
@@ -30,5 +25,5 @@ enableEmoji = true
 [Params.Social]
   twitter = "empathicqubit"
   github = "empathicqubit"
-  mastodon = "empathicqubit@dizl.de"
+  mastodon = "https://dizl.de/empathicqubit"
   reddit = "empathicqubit"
