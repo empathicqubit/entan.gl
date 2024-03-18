@@ -43,7 +43,7 @@ resource "google_dns_managed_zone" "entan" {
   name = var.project_name
   dns_name = "${var.dns_name}."
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_dns_record_set" "a" {
@@ -57,7 +57,7 @@ resource "google_dns_record_set" "a" {
     "151.101.65.195",
   ]
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_dns_record_set" "www_a" {
@@ -71,7 +71,7 @@ resource "google_dns_record_set" "www_a" {
     "151.101.65.195",
   ]
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_dns_record_set" "txt" {
@@ -86,7 +86,7 @@ resource "google_dns_record_set" "txt" {
     "\"google-site-verification=uFJqOMJi0QRi6kYJ_P3CJ6NiwhA_vXYfrVgHuOmyzjk\"",
   ]
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_dns_record_set" "txt_acme" {
@@ -99,7 +99,7 @@ resource "google_dns_record_set" "txt_acme" {
     "\"3LffUPXXwdsEARLt2l9fwZyqHgGJ5N7EXPiaZJpuvQQ\""
   ]
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_dns_record_set" "www_txt_acme" {
@@ -112,7 +112,7 @@ resource "google_dns_record_set" "www_txt_acme" {
     "\"sy0wZQ9y89wxf3v1Fxs5aprOzQ33xTF5UcJnGtuyy6I\""
   ]
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_dns_record_set" "protonmail_domainkey1" {
@@ -123,7 +123,7 @@ resource "google_dns_record_set" "protonmail_domainkey1" {
   ttl = 3600
   rrdatas = ["protonmail.domainkey.dao2ss6o57vvef6sdgmtww2uwym4wub3nndbqpqmasevtvbjix3aa.domains.proton.ch."]
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_dns_record_set" "protonmail_domainkey2" {
@@ -134,7 +134,7 @@ resource "google_dns_record_set" "protonmail_domainkey2" {
   ttl = 3600
   rrdatas = ["protonmail2.domainkey.dao2ss6o57vvef6sdgmtww2uwym4wub3nndbqpqmasevtvbjix3aa.domains.proton.ch."]
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_dns_record_set" "protonmail_domainkey3" {
@@ -145,7 +145,7 @@ resource "google_dns_record_set" "protonmail_domainkey3" {
   ttl = 3600
   rrdatas = ["protonmail3.domainkey.dao2ss6o57vvef6sdgmtww2uwym4wub3nndbqpqmasevtvbjix3aa.domains.proton.ch."]
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_dns_record_set" "protonmail_mx" {
@@ -158,7 +158,7 @@ resource "google_dns_record_set" "protonmail_mx" {
     "10 mail.protonmail.ch.",
   ]
 
-  depends_on = ["google_project_service.dns"]
+  depends_on = [google_project_service.dns]
 }
 
 resource "google_storage_bucket" "static" {
