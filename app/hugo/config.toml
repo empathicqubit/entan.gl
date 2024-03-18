@@ -23,7 +23,6 @@ enableEmoji = true
   pocket = true
 
 [Params.Social]
-  twitter = "empathicqubit"
   github = "empathicqubit"
   mastodon = "https://dizl.de/@empathicqubit"
   reddit = "empathicqubit"
