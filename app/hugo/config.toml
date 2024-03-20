@@ -6,10 +6,12 @@ theme = "binario"
 enableEmoji = true
 
 [Params]
-  post_meta = ["date", "categories"] # Enable post meta fields in given order
   customCSS = [
       "css/mine.css"
   ]
+
+[Params.Entry]
+  meta = ["date", "categories", "tags"] # Enable post meta fields in given order
 
 [Params.Share]
   facebook = true
