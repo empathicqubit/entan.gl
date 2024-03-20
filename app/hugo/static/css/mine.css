@@ -41,3 +41,11 @@ figure {
 .mermaid .section-root tspan {
     fill: #ff0;
 }
+
+a, h1, h2, h3, h4, h5, h6 {
+    color: #d95cac;
+}
+
+main a {
+    text-decoration: underline;
+}
