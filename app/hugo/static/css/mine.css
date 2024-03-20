@@ -21,6 +21,7 @@ figure {
 
 .mermaid-source {
     display: block;
+    overflow: hidden;
     height: 1em;
     width: 100%;
 }
