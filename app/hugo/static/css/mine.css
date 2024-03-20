@@ -11,6 +11,10 @@ figure {
     touch-action: none;
 }
 
+.entry__content {
+    overflow: initial; /* I don't know who's stupid idea this was */
+}
+
 .mermaid {
     width: 400%;
 }

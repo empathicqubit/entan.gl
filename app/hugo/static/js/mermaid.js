@@ -8,7 +8,6 @@ mermaid.run({
         if(!outer) {
             return;
         }
-        document.querySelector('.entry__content').scroll(0,0);
         window.scroll(0,0);
         outer.scrollTop -= outer.clientHeight / 2;
         outer.scrollLeft += outer.clientWidth / 2;

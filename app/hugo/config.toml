@@ -43,6 +43,9 @@ enableEmoji = true
   vk = true
   pocket = true
 
+[Params.Featured]
+  previewOnly = true # Show only preview featured image
+
 [Params.Social]
   github = "empathicqubit"
   mastodon = "https://dizl.de/@empathicqubit"
