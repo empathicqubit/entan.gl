@@ -5,10 +5,12 @@ lastmod: 2024-03-20T14:16:07+00:00
 draft: false
 categories:
     - japan
+menu: 
+    - main
+    - footer
 ---
 
-A place for me to document my Japanese knowledge, based on the context I learned
-words from.
+A huge mind map of all the Japanese I've learned, broken down by where the words came from.
 
 <!--more-->
 

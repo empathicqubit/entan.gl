@@ -10,6 +10,27 @@ enableEmoji = true
       "css/mine.css"
   ]
 
+
+[[Menus.main]]
+  name = 'Categories'
+  pageRef = '/categories'
+  weight = 20
+
+[[Menus.main]]
+  name = 'Posts'
+  pageRef = '/posts'
+  weight = 20
+
+[[Menus.footer]]
+  name = 'Categories'
+  pageRef = '/categories'
+  weight = 20
+
+[[Menus.footer]]
+  name = 'Posts'
+  pageRef = '/posts'
+  weight = 20
+
 [Params.Entry]
   meta = ["date", "categories", "tags"] # Enable post meta fields in given order
 

@@ -5,3 +5,5 @@ artifacts/
 app/bucket-files
 *.log
 .firebase
+*.orig
+*.rej
