@@ -37,6 +37,7 @@ enableEmoji = true
 [Params.Share]
   telegram = true
   pocket = true
+  mastodon = true
 
 [Params.Featured]
   previewOnly = true # Show only preview featured image
