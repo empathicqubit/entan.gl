@@ -1,0 +1,11 @@
+<footer class="footer">
+	{{- partial "footer_social.html" . }}
+	{{- partial "footer_menu.html" . }}
+	<div class="footer__copyright">© {{ now.Format "2006" }} {{ .Site.Params.copyright | default .Site.Title }}. <span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span></div>
+</footer>
+{{ if .Store.Get "hasMermaid" }}
+  <script type="module" async>
+    import '/js/mermaid.js'
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+{{ end }}

@@ -4,12 +4,6 @@ date: 2019-05-05T06:00:35Z
 draft: false
 categories:
     - commodore
-post-guide: |
-    Useful shortcodes:
-
-    {{< gcs_img src="path relative to static bucket root" >}}
-
-    <a href="{{<gcs src="path relative to static bucket root" >}}">Test GCS link</a>
 ---
 
 I've always had the Commodore 64 (C64) in the back of my mind, but I never really paid much attention to it. I was vaguely aware of its importance in computing and videogaming history, as I had seen it occasionally on emulation websites, which piqued my interest enough to look it up and store it in the back of my mind for years. It seemed interesting, but I had already experimented with an old MS-DOS laptop with Q-BASIC years ago, and diving into an environment that wasn't remotely IBM PC compatible didn't seem like my idea of a good time.

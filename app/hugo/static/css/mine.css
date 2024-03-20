@@ -2,3 +2,37 @@ figure {
     display: flex;
     flex-direction: column;
 }
+
+.mermaid-outer {
+    width: 100%;
+    height: 75vh;
+    min-height: 20em;
+    overflow: scroll;
+    touch-action: none;
+}
+
+.mermaid {
+    width: 400%;
+}
+
+.mermaid-source {
+    display: block;
+    height: 1em;
+    width: 100%;
+}
+
+.mermaid-source:hover {
+    height: initial;
+}
+
+.mermaid a text {
+    fill: #00f!important;
+}
+
+.mermaid .section-root .node-bkg, .section-root polygon {
+    fill: #f00!important;
+}
+
+.mermaid .section-root tspan {
+    fill: #ff0;
+}

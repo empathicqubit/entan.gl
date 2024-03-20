@@ -4,7 +4,7 @@ const googleApplicationCredentialsPath = shell.exec(`gcloud info "--format=value
 process.env.GOOGLE_APPLICATION_CREDENTIALS = process.env.GOOGLE_APPLICATION_CREDENTIALS ?? googleApplicationCredentialsPath;
 
 getStaticBucketPath = () => {
-    process.env.STATIC_BUCKET_PATH = shell.exec('npm-run-all --silent tf:static_bucket_path', { silent: true }).stdout.trim();
+    process.env.HUGO_STATIC_BUCKET_PATH = shell.exec('npm-run-all --silent tf:static_bucket_path', { silent: true }).stdout.trim();
 };
 
 const scripts = {

@@ -4,14 +4,6 @@ date: 2019-09-21T23:27:52-07:00
 draft: false
 categories:
     - commodore
-post-guide: |
-    Useful shortcodes:
-
-    {{< gcs_img src="path relative to static bucket root" >}}
-
-    <a href="{{<gcs src="path relative to static bucket root" >}}">Test GCS link</a>
-
-    {{< cbm >}} Commodore logo bc why not?
 ---
 
 I tried to get a Commodore 64 from eBay, but I got outbid many times and got frustrated. I mentioned to my family back in May about my ideas of getting a machine and my stepdad told me he had one! He mailed it to me a month or two ago. These are my general experiences with it so far. I'll try to keep my programming experiences with it in a future post, because there's just too much to cover here.

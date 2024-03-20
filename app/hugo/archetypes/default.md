@@ -19,6 +19,10 @@ post-guide: |
     {{< cbm >}} Commodore logo bc why not?
 
     date -uIs gives date in ISO UTC
+
+    Include a mermaid diagram:
+    ```mermaid
+    ```
 ---
 
 The summary.

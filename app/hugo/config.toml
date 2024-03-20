@@ -5,13 +5,11 @@ title = "entan.gl"
 theme = "binario"
 enableEmoji = true
 
-[params]
-    customCSS = [
-        "css/mine.css"
-    ]
-
 [Params]
   post_meta = ["date", "categories"] # Enable post meta fields in given order
+  customCSS = [
+      "css/mine.css"
+  ]
 
 [Params.Share]
   facebook = true

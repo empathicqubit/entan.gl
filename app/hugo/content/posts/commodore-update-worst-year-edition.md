@@ -4,14 +4,6 @@ date: 2020-06-15T14:58:37-04:00
 draft: false
 categories:
     - commodore
-post-guide: |
-    Useful shortcodes:
-
-    {{< gcs_img src="path relative to static bucket root" >}}
-
-    <a href="{{<gcs src="path relative to static bucket root" >}}">Test GCS link</a>
-
-    {{< cbm >}} Commodore logo bc why not?
 ---
 
 🎵 When it was 2020,
