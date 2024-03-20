@@ -1,1 +1,1 @@
-<img src="{{ .Get "src" | print (getenv "HUGO_STATIC_BUCKET_PATH") "/" | replaceRE "([^:])/+" "$1/" }}" />
+{{ partial "gcs_img.html" (dict "alt" (.Get "alt") "src" (.Get "src")) }}

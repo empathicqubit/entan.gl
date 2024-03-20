@@ -46,6 +46,76 @@ a, h1, h2, h3, h4, h5, h6 {
     color: #d95cac;
 }
 
+@media (max-width: 919px) {
+    .main-nav__item {
+        background-color: #170b29;
+    }
+}
+
+.main-nav__btn {
+    background-color: #170b29;
+}
+
+.main-nav__item:hover {
+    background-color: #6931b7;
+}
+
 main a {
     text-decoration: underline;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    padding: 4.5rem 1.5rem 1.5rem 4.5rem;
+    border-radius: 50%;
+    background-color: #421f73;
+    overflow: hidden;
+    height: 10.5rem;
+    width: 10.5rem;
+    left: -4rem;
+    top: -4rem;
+}
+
+.logo_extendo {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    background-color:#421f73;
+    height: 4.5rem;
+    z-index: -1;
+    width: 100%;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    margin-left: 4rem;
+    margin-top: 1.75rem;
+    padding-left: 2rem;
+    background-color:#421f73
+}
+
+.block {
+    background-color:#170b29;
+}
+
+body {
+    background-color: #0d0618;
+}
+
+main {
+    margin-top: 1.1rem;
+}
+
+footer {
+    clear: both;
+}
+
+.social__link, .share__icon {
+    fill: #d95cac;
+    stroke: #d95cac;
 }

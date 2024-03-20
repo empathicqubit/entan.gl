@@ -8,6 +8,16 @@ categories:
 menu: 
     - main
     - footer
+featured:
+    alt: |
+        A small preview of the mind map.
+        The following text is visible:
+        冒険　ぼうけん　adventure;
+        tomorrow :P ;
+        日本語　;
+        Technology
+        Grammar and spelling
+        Katakana
 ---
 
 A huge mind map of all the Japanese I've learned, broken down by where the words came from.
