@@ -12,7 +12,7 @@ I would recommend Duolingo for learning that. After that it gets a bit tedious,
 and the core lessons for Duolingo can be too easy, especially on mobile where
 switching off the word bank isn't possible.
 
-LingoDeer is a pretty useful and free tool for learning Japanese. I would not recommend
+LingoDeer is a pretty useful, but unfortunately **not** free tool for learning Japanese. I would not recommend
 it for languages that use the Latin alphabet. I tried it with German and it is not
 challenging enough to make the words stick in your brain, but you can still use it to
 get an overview of vocabulary.
