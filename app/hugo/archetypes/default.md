@@ -22,7 +22,11 @@ post-guide: |
 
     Include a mermaid diagram:
     ```mermaid
+    mindmap
+        Nodes can be linked by setting up mm- classNames. Then the node can be hyperlinked with url with mm-example hash
+        :::mm-example
     ```
+    [Link to mm-example](#mm-example)
 ---
 
 The summary.

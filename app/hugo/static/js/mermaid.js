@@ -3,14 +3,36 @@ mermaid.initialize({ securityLevel: 'loose' });
 mermaid.run({
     querySelector: 'pre.mermaid',
     postRenderCallback: (id) => {
-        document.querySelector('.section-root')?.scrollIntoView(true);
-        const outer = document.getElementById(id).closest('.mermaid-outer');
+        const current = document.getElementById(id);
+
+        const outer = current.closest('.mermaid-outer');
         if(!outer) {
             return;
         }
-        window.scroll(0,0);
-        outer.scrollTop -= outer.clientHeight / 2;
-        outer.scrollLeft += outer.clientWidth / 2;
+
+        const scrollNode = (node) => {
+            node?.scrollIntoView({
+                behavior: 'auto',
+                block: 'center',
+                inline: 'center',
+            });
+        }
+
+        const hashScroll = () => {
+            const hash = window.location.hash.slice(4);
+            const node = current.querySelector('.mm-' + hash);
+
+            if(!window.location.hash.startsWith('#mm-') || !node) {
+                scrollNode(current.querySelector('.section-root'));
+                window.scroll(0,0);
+                return;
+            }
+
+            scrollNode(node);
+        };
+
+        window.addEventListener('hashchange', hashScroll);
+        hashScroll();
 
         let isDrag = false;
         let wasDragged = false;
@@ -45,6 +67,27 @@ mermaid.run({
 
         const nodes = outer.querySelectorAll('.mindmap-node');
         for(const node of nodes) {
+            const mmClass = Array.from(node.classList).find(x => x.startsWith('mm-'));
+            if(mmClass) {
+
+                const nodeLinkIcon = document.createElement('i');
+                nodeLinkIcon.setAttribute('aria-hidden', 'true');
+                nodeLinkIcon.classList.add('fa', 'fa-link');
+                const nodeLink =  document.createElement('a');
+                nodeLink.href = "#" + mmClass;
+                nodeLink.appendChild(nodeLinkIcon);
+                const nodeLinkContainer = document.createElementNS("http://www.w3.org/2000/svg", 'foreignObject');
+                nodeLinkContainer.setAttribute('width', '60');
+                nodeLinkContainer.setAttribute('height', '60');
+                nodeLinkContainer.setAttribute('right', '0');
+                nodeLinkContainer.setAttribute('bottom', '0');
+                nodeLinkContainer.appendChild(nodeLink);
+                node.appendChild(nodeLinkContainer);
+            }
+            else {
+                console.log(node.textContent, 'is unlinkable');
+            }
+
             const urlParts = [];
             const urlSpans = [];
             const tspans = node.querySelectorAll('tspan');
@@ -73,7 +116,6 @@ mermaid.run({
             if(!urlParts.length) {
                 continue;
             }
-            console.log(urlParts);
 
             const anchor = document.createElementNS("http://www.w3.org/2000/svg", 'a');
             anchor.onclick = (e) => {
