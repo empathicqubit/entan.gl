@@ -35,12 +35,7 @@ enableEmoji = true
   meta = ["date", "categories", "tags"] # Enable post meta fields in given order
 
 [Params.Share]
-  facebook = true
-  twitter = true
-  reddit = true
   telegram = true
-  linkedin = true
-  vk = true
   pocket = true
 
 [Params.Featured]
