@@ -210,7 +210,7 @@ mindmap
                     [
                         未来最高
                         みらいさいこう
-                        "The future rules" https://www.youtube.com/watch?v=yGZwsO5wF04
+                        "The future rules" https://www.youtube.com/watch?v=AsDleJoDnjE
                     ]
                     :::mm-mirai-saikou
                     I don't like the song that much, but it's funny how Mori exaggerates the pronunciation of 正義　せいぎ
