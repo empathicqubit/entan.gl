@@ -57,6 +57,15 @@ mindmap
             :::mm-shichi
         Music
         :::mm-music
+            [
+                新宝島
+                しんたからじま https://www.youtube.com/watch?v=LIlZCmETvsY
+            ]
+            :::mm-shin-takarajima
+                新　しん　new. Often used in names such as 新宿 しんじゅく
+                :::mm-shin
+                宝島　たからじま　Treasure Island しま　becomes じま　in a compound word I guess
+                :::mm-takarajima
             鹿乃　Kano
             :::mm-kano
                 I can't write her name easily. The first Kanji is しか　and the second appears with かの　as you might expect
