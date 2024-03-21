@@ -1,7 +1,7 @@
 ---
 title: "Japanese Mind Map"
 date: 2024-03-19T16:39:19+01:00
-lastmod: 2024-03-20T14:16:07+00:00
+lastmod: 2024-03-21T01:07:02+00:00
 draft: false
 categories:
     - japan
