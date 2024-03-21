@@ -11,13 +11,13 @@ menu:
 featured:
     alt: |
         A small preview of the mind map.
-        The following text is visible:
-        冒険　ぼうけん　adventure;
+        The following text is visible :
+        冒険　ぼうけん　adventure ;
         tomorrow :P ;
         日本語　;
-        Technology
-        Grammar and spelling
-        Katakana
+        Technology ;
+        Grammar and spelling ;
+        Katakana ;
 ---
 
 A huge mind map of all the Japanese I've learned, broken down by where the words came from.
@@ -57,6 +57,32 @@ mindmap
             :::mm-shichi
         Music
         :::mm-music
+            鹿乃　Kano
+            :::mm-kano
+                I can't write her name easily. The first Kanji is しか　and the second appears with かの　as you might expect
+                :::mm-kano-kanji
+                Has a very calming voice
+                :::mm-kano-desc
+                HOPE https://www.nicovideo.jp/watch/sm34341377
+                :::mm-kano-hope
+                    [
+                        本当の君の顔
+                        ほんとうのきみのかお
+                        Your true face
+                    ]
+                    :::mm-kano-hontou-no-kimi-no-kao
+                        君　きみ　You, familiar
+                        :::mm-kano-kimi
+                        本当　ほんとう　True
+                        :::mm-kano-hontou
+                        顔　かお　face
+                        :::mm-kano-kao
+                    [
+                        本当の自分
+                        ほんとうのじぶん
+                        true self
+                    ]
+                    :::mm-kano-hontou-no-jibun
             エビチャーハン - You're saying a shrimp fried this rice!? https://www.youtube.com/watch?v=s742C0v5SFI
             :::mm-youre-saying-a-shrimp-fried-this-rice
                 You can't escape Shrimp Miku https://www.youtube.com/watch?v=EgCJhuOmW6Y
@@ -170,6 +196,29 @@ mindmap
                 :::mm-bts-japanese-korean
         Vtubers
         :::mm-vtubers
+            [
+                森カリオペ
+                Mori Calliope https://www.youtube.com/watch?v=XW3-enNF1-4
+            ]
+            :::mm-mori-calliope
+                [
+                    未来島
+                    みらいしま
+                    Future Island - One Piece https://www.youtube.com/watch?v=-Sb4wxbHh-4
+                ]
+                :::mm-mirai-shima
+                    [
+                        未来最高
+                        みらいさいこう
+                        "The future rules" https://www.youtube.com/watch?v=yGZwsO5wF04
+                    ]
+                    :::mm-mirai-saikou
+                    I don't like the song that much, but it's funny how Mori exaggerates the pronunciation of 正義　せいぎ
+                    :::mm-seigi-exaggerate
+                        正義　せいぎ　Justice
+                        :::mm-seigi
+                            The Marines in One Piece have this written on their uniforms https://onepiece.fandom.com/wiki/Justice
+                            :::mm-marine-seigi
             [
                 Gawr Gura
                 AKA Gooba https://www.youtube.com/watch?v=7U6eHY1M9WM

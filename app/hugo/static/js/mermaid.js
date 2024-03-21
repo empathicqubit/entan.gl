@@ -1,4 +1,5 @@
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+// This is pinned since we're doing all this manual manipulation of the nodes
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.esm.min.mjs'; 
 mermaid.initialize({ securityLevel: 'loose' });
 mermaid.run({
     querySelector: 'pre.mermaid',
@@ -69,7 +70,7 @@ mermaid.run({
         for(const node of nodes) {
             const mmClass = Array.from(node.classList).find(x => x.startsWith('mm-'));
             if(mmClass) {
-
+                // This creates a permalink to the node, which is jumped to by the hashscroll function
                 const nodeLinkIcon = document.createElement('i');
                 nodeLinkIcon.setAttribute('aria-hidden', 'true');
                 nodeLinkIcon.classList.add('fa', 'fa-link');
