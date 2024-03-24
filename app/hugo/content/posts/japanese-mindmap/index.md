@@ -33,14 +33,55 @@ mindmap
     {{日本語}}
     ::icon(fa fa-circle)
     :::mm-nihongo
-        明後日　あさって　übermorgen or "the day after tomorrow" 😋
-        :::mm-uebermorgen
+        Random words
+        :::mm-random-words
+            明後日　あさって　übermorgen or "the day after tomorrow" 😋
+            :::mm-uebermorgen
+            外人　がいじん　foreigner
+            :::mm-gaijin
+        Body
+        :::mm-body
+            手　て　Hand
+            :::mm-hand
+            毛 け　Hair
+            :::mm-hair
         Manners
         :::mm-manners
             めしあがれ　enjoy your meal
             :::mm-enjoy
+            Hiding your own opinion.
+                本音　ほんね　Your true opinion
+                :::mm-honne
+                    音　おと　Sound
+                    :::mm-oto
+                建前　たてまえ　The culturally appropriate opinion
+                :::mm-tatemae
         Grammar and spelling
         :::mm-grammar
+            Some words are only a single mora. This bothers me.
+            :::mm-one-mora
+                気　き　Spirit
+                :::mm-spirit
+                木　き　Tree
+                :::mm-tree
+                目　め　Eye
+                :::mm-eye
+                絵　え　Picture
+                :::mm-picture
+            Many words are homonyms
+            :::mm-homonym
+                いちご
+                :::mm-ichigo
+                    苺　いちご　Strawberry
+                    :::mm-strawberry
+                    一号　いちご　Number one　"the best"
+                    :::mm-number-one
+            Some Kanji have multiple readings. This too bothers me.
+            :::mm-multiple-kanji-readings
+                新しい　あたらしい　New
+                :::mm-atara-reading
+                新　しん
+                :::mm-shin-reading
             [
                 Some characters in Katakana are very close to each other
                 ソ so - ン ｎ
@@ -58,6 +99,17 @@ mindmap
         Music
         :::mm-music
             [
+                初音ミク
+                はつねみく
+                Hatsune Miku
+            ]
+            :::mm-hatsune-miku
+                [
+                    初音　はつね
+                    First warbling of the New Year
+                ]
+                :::mm-hatsune
+            [
                 新宝島
                 しんたからじま https://www.youtube.com/watch?v=LIlZCmETvsY
             ]
@@ -66,6 +118,35 @@ mindmap
                 :::mm-shin
                 宝島　たからじま　Treasure Island しま　becomes じま　in a compound word I guess
                 :::mm-takarajima
+            YOASOBI
+            :::mm-yoasobi
+                [
+                    夜　よる　Night
+                    遊び　あそび　Play
+                ]
+                :::mm-yoasobi meaning
+                YOASO鼻 https://www.youtube.com/watch?v=D2VryLndqhg
+                :::mm-yoaso-bi
+                    鼻　はな　Means nose, but sounds like bi in Chinese.
+                    :::mm-hana-bi
+            Aiobahn
+            :::mm-aiobahn
+                INTERNET YAMERO https://www.youtube.com/watch?v=51GIxXFKbzk
+                :::mm-internet-yamero-aiobahn
+                    止めろ　やめろ　STOP
+                    :::mm-aibahn-yamero
+                宙でおやすみ ちゅうでおやすみ
+                :::mm-chuu-de-oyasumi
+                    [
+                        夢に落ちる　ゆめにおちる
+                        Falling into a dream
+                    ]
+                    :::mm-yume-ni-ochiru
+                    [
+                        空が落ちる　そらがおちる
+                        The sky is falling
+                    ]
+                    :::mm-sora-ga-ochiru
             鹿乃　Kano
             :::mm-kano
                 I can't write her name easily. The first Kanji is しか　and the second appears with かの　as you might expect
@@ -102,8 +183,40 @@ mindmap
                 :::mm-miku
                 炒飯　ちゃーはん Cha-han https://en.wikipedia.org/wiki/Chahan_%28dish%29
                 :::mm-cha-han
+            Minami 美波　みなみ
+            :::mm-minami
             ZUTOMAYO https://zutomayo.net/
             :::mm-zutomayo
+                [
+                    優しく　Last Smile
+                    やさしく　Last Smile 
+                    Kind Last Smile
+                ]
+                :::mm-yasashiku-last-smile
+                    [
+                        優しくなりたい
+                        I want to be kind https://www.youtube.com/watch?v=Z-z0-W61xLw
+                    ]
+                    :::mm-yasashiku-naritai
+                    [
+                        本当は十一時に寝たんだ
+                        ほんとうはじゅういちじにねたんだ
+                    ]
+                    :::mm-hontou-wa-juuichi-ji-ni-netanda
+                        本当　ほんとう　Truth
+                        :::mm-yasashiku-hontou
+                        十一 じゅういち　Eleven
+                        :::mm-yasashiku-juuichi
+                        時　じ　Hour, o'clock
+                        :::mm-yasashiku-ji
+                        に　Particle indicating movement or pointing to where or when
+                        :::mm-yasashiku-ni
+                        寝た ねた　Was sleeping
+                        :::mm-yasashiku-neta
+                        んだ　Explanation particle
+                        :::mm-yasashiku-nda
+                もりもり has some cool ZUTOMAYO shitpost videos https://www.youtube.com/watch?v=7t3aYNmUQww
+                :::mm-morimori
                 歌声　うたごえ　Singing voice.
                 :::mm-utagoe
                     声　こえ　Voice
@@ -119,6 +232,13 @@ mindmap
                 :::mm-liebe-zutomayo
                 はゔぁ　Have a
                 :::mm-hava
+                    [
+                        tell me tell me
+                        crunchy crunchy crunchy
+                        crunchy crunchy crunchy
+                        なあああああ
+                    ]
+                    :::mm-hava-crunchy
                     Song has a really weird name with vu ゔ
                     :::mm-vu
                     物語　ものがたり　Story
@@ -203,6 +323,26 @@ mindmap
             :::mm-bts
                 They sing Japanese songs too, even though they're Korean https://www.youtube.com/watch?v=9IHwqdz8Xhw
                 :::mm-bts-japanese-korean
+        Youtubers
+        :::mm-youtubers
+            Kaname Naito
+            :::mm-kaname-naito
+                やつ Random object or derogatory reference to person https://www.youtube.com/watch?v=ROcSmpXFEn8
+                :::mm-yatsu-kaname
+                    [
+                        In the song 暗く黒く　くらくくろく by ZUTOMAYO:
+                        やつが暗く黒く
+                        やつがくらくくろく
+                    ]
+                    :::mm-yatsu-ga-kuraku-kuroku
+                        やつ　That thing
+                        :::mm-yatsu
+                        暗く　くらく Dark
+                        :::mm-kuraku
+                        黒く　くろく Black
+                        :::mm-kuroku
+                        暗く黒く　Pitch black, very dark
+                        :::mm-kuraku-kuroku-explanation
         Vtubers
         :::mm-vtubers
             [
@@ -210,6 +350,18 @@ mindmap
                 Mori Calliope https://www.youtube.com/watch?v=XW3-enNF1-4
             ]
             :::mm-mori-calliope
+                Left for Dead Lullaby
+                :::mm-lullaby
+                    愛の唄でおやすみよ
+                    :::mm-lullaby-ai-no-uta-de
+                    愛　あい　Love
+                    :::mm-lullaby-ai
+                    唄　うた　Song, only traditional
+                    :::mm-lullaby-唄
+                        歌　うた、Song, any song
+                        :::mm-lullaby-歌
+                    おやすみ　Rest、Sleep
+                    :::mm-oyasumi
                 [
                     未来島
                     みらいしま
@@ -228,6 +380,8 @@ mindmap
                         :::mm-seigi
                             The Marines in One Piece have this written on their uniforms https://onepiece.fandom.com/wiki/Justice
                             :::mm-marine-seigi
+                            まさよし　is an alternate reading of 正義 used as a family name
+                            :::mm-masayoshi
             [
                 Gawr Gura
                 AKA Gooba https://www.youtube.com/watch?v=7U6eHY1M9WM

@@ -20,7 +20,7 @@ mermaid.run({
         }
 
         const hashScroll = () => {
-            const hash = window.location.hash.slice(4);
+            const hash = decodeURIComponent(window.location.hash.slice(4));
             const node = current.querySelector('.mm-' + hash);
 
             if(!window.location.hash.startsWith('#mm-') || !node) {
