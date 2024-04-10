@@ -17,6 +17,12 @@ mermaid.run({
                 block: 'center',
                 inline: 'center',
             });
+            const animationend = () => {
+                node?.classList?.remove('selected');
+                node?.removeEventListener('animationend', animationend);
+            };
+            node?.addEventListener?.('animationend', animationend);
+            node?.classList?.add?.('selected');
         }
 
         const hashScroll = () => {
@@ -67,8 +73,15 @@ mermaid.run({
         pointerScroll(outer);
 
         const nodes = outer.querySelectorAll('.mindmap-node');
+        const mmClasses = [];
         for(const node of nodes) {
             const mmClass = Array.from(node.classList).find(x => x.startsWith('mm-'));
+
+            if(mmClasses.includes(mmClass)) {
+                console.log('Duplicate class ' + mmClass);
+            }
+            mmClasses.push(mmClass);
+
             if(mmClass) {
                 // This creates a permalink to the node, which is jumped to by the hashscroll function
                 const nodeLinkIcon = document.createElement('i');
@@ -101,13 +114,16 @@ mermaid.run({
                 try {
                     const content = tspan.textContent?.trim() ?? '';
                     if(!found) {
-                        if(!content.includes('://')) {
-                            continue;
+                        if(content.includes('://')) {
+                            new URL(content);
+                            found = true;
                         }
-                        new URL(content);
-                        found = true;
+                        else if(content.includes('###')) {
+                            found = true;
+                        }
+                        else continue;
                     }
-                    urlParts.push(content);
+                    urlParts.push(content.replace('###', '#'));
                     urlSpans.push(tspan);
                 }
                 catch {}
@@ -118,17 +134,24 @@ mermaid.run({
                 continue;
             }
 
+            const fullUrl = urlParts.join('');
             const anchor = document.createElementNS("http://www.w3.org/2000/svg", 'a');
             anchor.onclick = (e) => {
                 if(!wasDragged) {
+                    if(fullUrl.startsWith('#')) {
+                        hashScroll();
+                    }
+
                     return;
                 }
 
                 e.preventDefault();
                 e.stopPropagation();
             };
-            anchor.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", urlParts.join(''));
-            anchor.setAttribute("target", '_blank');
+            anchor.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", fullUrl);
+            if(!fullUrl.startsWith('#')) {
+                anchor.setAttribute("target", '_blank');
+            }
             node.parentNode.insertBefore(anchor, node);
             anchor.appendChild(node);
             for(const urlSpan of urlSpans) {

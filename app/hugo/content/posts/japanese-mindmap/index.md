@@ -1,7 +1,8 @@
 ---
 title: "Japanese Mind Map"
 date: 2024-03-19T16:39:19+01:00
-lastmod: 2024-03-24T00:53:26+00:00
+lastmod: 2024-04-11T00:53:26+00:00
+
 draft: false
 categories:
     - japan
@@ -50,6 +51,7 @@ mindmap
             めしあがれ　enjoy your meal
             :::mm-enjoy
             Hiding your own opinion.
+            :::mm-opinions
                 本音　ほんね　Your true opinion
                 :::mm-honne
                     音　おと　Sound
@@ -98,231 +100,252 @@ mindmap
             :::mm-shichi
         Music
         :::mm-music
-            [
-                初音ミク
-                はつねみく
-                Hatsune Miku
-            ]
-            :::mm-hatsune-miku
+            Other Music
+            :::mm-other-music
                 [
-                    初音　はつね
-                    First warbling of the New Year
+                    新宝島
+                    しんたからじま https://www.youtube.com/watch?v=LIlZCmETvsY
                 ]
-                :::mm-hatsune
-            [
-                新宝島
-                しんたからじま https://www.youtube.com/watch?v=LIlZCmETvsY
-            ]
-            :::mm-shin-takarajima
-                新　しん　new. Often used in names such as 新宿 しんじゅく
-                :::mm-shin
-                宝島　たからじま　Treasure Island しま　becomes じま　in a compound word I guess
-                :::mm-takarajima
-            YOASOBI
-            :::mm-yoasobi
-                [
-                    夜　よる　Night
-                    遊び　あそび　Play
-                ]
-                :::mm-yoasobi meaning
-                YOASO鼻 https://www.youtube.com/watch?v=D2VryLndqhg
-                :::mm-yoaso-bi
-                    鼻　はな　Means nose, but sounds like bi in Chinese.
-                    :::mm-hana-bi
-            Aiobahn
-            :::mm-aiobahn
-                INTERNET YAMERO https://www.youtube.com/watch?v=51GIxXFKbzk
-                :::mm-internet-yamero-aiobahn
-                    止めろ　やめろ　STOP
-                    :::mm-aibahn-yamero
-                宙でおやすみ ちゅうでおやすみ
-                :::mm-chuu-de-oyasumi
+                :::mm-shin-takarajima
+                    新　しん　new. Often used in names such as 新宿 しんじゅく
+                    :::mm-shin
                     [
-                        夢に落ちる　ゆめにおちる
-                        Falling into a dream
+                        宝島　たからじま
+                        Treasure Island
+                        しま　becomes じま　in a compound word I guess
                     ]
-                    :::mm-yume-ni-ochiru
-                    [
-                        空が落ちる　そらがおちる
-                        The sky is falling
-                    ]
-                    :::mm-sora-ga-ochiru
-            鹿乃　Kano
-            :::mm-kano
-                I can't write her name easily. The first Kanji is しか　and the second appears with かの　as you might expect
-                :::mm-kano-kanji
-                Has a very calming voice
-                :::mm-kano-desc
-                HOPE https://www.nicovideo.jp/watch/sm34341377
-                :::mm-kano-hope
-                    [
-                        本当の君の顔
-                        ほんとうのきみのかお
-                        Your true face
-                    ]
-                    :::mm-kano-hontou-no-kimi-no-kao
-                        君　きみ　You, familiar
-                        :::mm-kano-kimi
-                        本当　ほんとう　True
-                        :::mm-kano-hontou
-                        顔　かお　face
-                        :::mm-kano-kao
-                    [
-                        本当の自分
-                        ほんとうのじぶん
-                        true self
-                    ]
-                    :::mm-kano-hontou-no-jibun
-            エビチャーハン - You're saying a shrimp fried this rice!? https://www.youtube.com/watch?v=s742C0v5SFI
-            :::mm-youre-saying-a-shrimp-fried-this-rice
-                You can't escape Shrimp Miku https://www.youtube.com/watch?v=EgCJhuOmW6Y
-                :::mm-shrimp-miku-sees-you-when-youre-sleeping
-                海老 えび　Shrimp
-                :::mm-ebi
-                ミク　Miku https://www.youtube.com/watch?v=-dYB0xfE7qs
-                :::mm-miku
-                炒飯　ちゃーはん Cha-han https://en.wikipedia.org/wiki/Chahan_%28dish%29
-                :::mm-cha-han
-            Minami 美波　みなみ
-            :::mm-minami
-            ZUTOMAYO https://zutomayo.net/
-            :::mm-zutomayo
-                [
-                    優しく　Last Smile
-                    やさしく　Last Smile 
-                    Kind Last Smile
-                ]
-                :::mm-yasashiku-last-smile
-                    [
-                        優しくなりたい
-                        I want to be kind https://www.youtube.com/watch?v=Z-z0-W61xLw
-                    ]
-                    :::mm-yasashiku-naritai
-                    [
-                        本当は十一時に寝たんだ
-                        ほんとうはじゅういちじにねたんだ
-                    ]
-                    :::mm-hontou-wa-juuichi-ji-ni-netanda
-                        本当　ほんとう　Truth
-                        :::mm-yasashiku-hontou
-                        十一 じゅういち　Eleven
-                        :::mm-yasashiku-juuichi
-                        時　じ　Hour, o'clock
-                        :::mm-yasashiku-ji
-                        に　Particle indicating movement or pointing to where or when
-                        :::mm-yasashiku-ni
-                        寝た ねた　Was sleeping
-                        :::mm-yasashiku-neta
-                        んだ　Explanation particle
-                        :::mm-yasashiku-nda
-                もりもり has some cool ZUTOMAYO shitpost videos https://www.youtube.com/watch?v=7t3aYNmUQww
-                :::mm-morimori
-                歌声　うたごえ　Singing voice.
-                :::mm-utagoe
-                    声　こえ　Voice
-                    :::mm-koe
-                    歌　うた　Song
-                    :::mm-uta
-                    [
-                        ACAねさんの歌声はきれいです
-                        ACA-ne-san's singing voice is beautiful.
-                    ]
-                    :::mm-acane-no-utagoe
-                My favorite J-Pop band
-                :::mm-liebe-zutomayo
-                はゔぁ　Have a
-                :::mm-hava
-                    [
-                        tell me tell me
-                        crunchy crunchy crunchy
-                        crunchy crunchy crunchy
-                        なあああああ
-                    ]
-                    :::mm-hava-crunchy
-                    Song has a really weird name with vu ゔ
-                    :::mm-vu
-                    物語　ものがたり　Story
-                    :::mm-monogatari
+                    :::mm-takarajima
+                Aiobahn
+                :::mm-aiobahn
+                    INTERNET YAMERO https://www.youtube.com/watch?v=51GIxXFKbzk
+                    :::mm-internet-yamero-aiobahn
+                        止めろ　やめろ　STOP
+                        :::mm-aibahn-yamero
+                    宙でおやすみ ちゅうでおやすみ https://www.youtube.com/watch?v=3z8y7enYB30
+                    :::mm-chuu-de-oyasumi
                         [
-                            洞窟の物語
-                            どうくつのものがたり
-                            Cave Story https://en.wikipedia.org/wiki/Cave_Story
+                            夢に落ちる　ゆめにおちる
+                            Falling into a dream
                         ]
-                        :::mm-cavestory
-                胸の煙　むねのけむり https://www.youtube.com/watch?v=wQPgM-9LatM
-                :::mm-mune-no-kemuri
-                    [
-                        My favorite line:
-                        辛いより、もっと辛いより
-                        it's painful, more than painful
-                    ]
-                    :::mm-tsurai-yori
-                        辛い　つらい　painful or spicy
-                        :::mm-tsurai
-                            I saw this word in Japanese restaurants
-                            :::mm-tsurai-spotted
-                花一匁 はないちもんめ
-                :::mm-hana-ichi-monme
-                    [
-                        It's a game played by schoolchildren.
-                        Two teams play じゃんけん, rock paper scissors,
-                        against each other, one player at a time.
-                        There's also a song chanted between each round. https://m.youtube.com/watch?v=FdxspRjiEjs
-                    ]
-                    :::mm-hana-ichi-monme-desc
-                        宵々古今 よいよいここん by REOL also mentions this game https://www.youtube.com/watch?v=8IK6eLTNV1k
-                        :::mm-hana-yoiyoi-kokon
-                こんなこと騒動 こんなことそうどう https://www.youtube.com/watch?v=mlA-Z7zSLHU
-                :::mm-konna-koto-soudou
-                    [
-                        My favorite part of the song:
-                        いつしか現れる
-                        同じ熱の途方もない憂いにも
-                        いつしか助けられる
-                        まだ諦めの**悪い夢**に頼ってしまうから
-                    ]
-                    :::mm-endless-sorrow
-                        悪い　わるい　Bad.
-                        :::mm-warui
-                            ワルイージ　Waluigi gets his name from this word. https://mario.fandom.com/de/wiki/Waluigi
-                            :::mm-waruigi
-                        夢　ゆめ　Dream
-                        :::mm-yume
-                            [
-                                「夢に落ちる」
-                                ゆめにおちる
-                                falling into a dream https://www.youtube.com/watch?v=3z8y7enYB30
-                            ]
-                            :::mm-yume-ni-ochiru
+                        :::mm-yume-ni-ochiru
+                        [
+                            空が落ちる　そらがおちる
+                            The sky is falling
+                        ]
+                        :::mm-sora-ga-ochiru
+                鹿乃　Kano
+                :::mm-kano
+                    I can't write her name easily. The first Kanji is しか　and the second appears with かの　as you might expect
+                    :::mm-kano-kanji
+                    Has a very calming voice
+                    :::mm-kano-desc
+                    HOPE https://www.nicovideo.jp/watch/sm34341377
+                    :::mm-kano-hope
+                        [
+                            本当の君の顔
+                            ほんとうのきみのかお
+                            Your true face
+                        ]
+                        :::mm-kano-hontou-no-kimi-no-kao
+                            君　きみ　You, familiar
+                            :::mm-kano-kimi
+                            本当　ほんとう　True
+                            :::mm-kano-hontou
+                            顔　かお　face
+                            :::mm-kano-kao
+                        [
+                            本当の自分
+                            ほんとうのじぶん
+                            true self
+                        ]
+                        :::mm-kano-hontou-no-jibun
+            Pop Music
+            :::mm-pop-music
                 [
-                    ばかじゃないのに
-                    Even though I'm not stupid https://www.youtube.com/watch?v=YgmFIVOR1-I
+                    初音ミク
+                    はつねみく
+                    Hatsune Miku
                 ]
-                :::mm-baka-janai-noni
-                    ばか　Stupid https://www.youtube.com/watch?v=GNeyqFfXf7k
-                    :::mm-baka
-                    じゃない　Negating the adjective
-                    :::mm-janai
-                    「靴に石入っても」 Even if a stone gets into my shoes
-                    :::mm-kutsu-ni-ishi
-                        靴　くつ　Shoes
-                        :::mm-kutsu
-                            靴下　くつした　Socks
-                            :::mm-kutsushita
-                            上着　うわぎ　Jacket
-                            :::mm-uwagi
-                        に　Particle marking movement to something. Similar to nach
-                        :::mm-ni
-                        石　いし　Stone
-                        :::mm-ishi
-                        入って　Enter, go into
-                        :::mm-haitte
-                        も　Particle which has a meaning of also
-                        :::mm-mo
-            BTS
-            :::mm-bts
-                They sing Japanese songs too, even though they're Korean https://www.youtube.com/watch?v=9IHwqdz8Xhw
-                :::mm-bts-japanese-korean
+                :::mm-hatsune-miku
+                    [
+                        初音　はつね
+                        First warbling of the New Year
+                    ]
+                    :::mm-hatsune
+                    ミク　Miku https://www.youtube.com/watch?v=-dYB0xfE7qs
+                    :::mm-miku
+                    エビチャーハン - You're saying a shrimp fried this rice!? https://www.youtube.com/watch?v=s742C0v5SFI
+                    :::mm-youre-saying-a-shrimp-fried-this-rice
+                        You can't escape Shrimp Miku https://www.youtube.com/watch?v=EgCJhuOmW6Y
+                        :::mm-shrimp-miku-sees-you-when-youre-sleeping
+                        海老 えび　Shrimp
+                        :::mm-ebi
+                        炒飯　ちゃーはん Cha-han https://en.wikipedia.org/wiki/Chahan_%28dish%29
+                        :::mm-cha-han
+                YOASOBI
+                :::mm-yoasobi
+                    [
+                        夜　よる　Night
+                        遊び　あそび　Play
+                    ]
+                    :::mm-yoasobi-meaning
+                    YOASO鼻 https://www.youtube.com/watch?v=D2VryLndqhg
+                    :::mm-yoaso-bi
+                        鼻　はな　Means nose, but sounds like bi in Chinese.
+                        :::mm-hana-bi
+                    [
+                        怪物　かいぶつ
+                        Monster
+                        BEASTARS opening song
+                    ]
+                    :::mm-kaibutsu
+                        [
+                            強くならたい
+                            つよくなりたい
+                        ]
+                        :::mm-tsuyoku-naritai
+                            強い　つよい　To be strong or resilient
+                            :::mm-tsuyoi
+                            なりたい　To want to become something
+                            :::mm-kaibutsu-naritai
+                [
+                    Minami
+                    美波
+                    みなみ
+                ]
+                :::mm-minami
+                ZUTOMAYO https://zutomayo.net/
+                :::mm-zutomayo
+                    [
+                        優しく Last Smile
+                        やさしく Last Smile 
+                        Kind Last Smile
+                    ]
+                    :::mm-yasashiku-last-smile
+                        [
+                            優しくなりたい
+                            I want to be kind https://www.youtube.com/watch?v=Z-z0-W61xLw
+                        ]
+                        :::mm-yasashiku-naritai
+                        [
+                            本当は十一時に寝たんだ
+                            ほんとうはじゅういちじにねたんだ
+                        ]
+                        :::mm-hontou-wa-juuichi-ji-ni-netanda
+                            本当　ほんとう　Truth
+                            :::mm-yasashiku-hontou
+                            十一 じゅういち　Eleven
+                            :::mm-yasashiku-juuichi
+                            時　じ　Hour, o'clock
+                            :::mm-yasashiku-ji
+                            に　Particle indicating movement or pointing to where or when
+                            :::mm-yasashiku-ni
+                            寝た ねた　Was sleeping
+                            :::mm-yasashiku-neta
+                            んだ　Explanation particle
+                            :::mm-yasashiku-nda
+                    もりもり has some cool ZUTOMAYO shitpost videos https://www.youtube.com/watch?v=7t3aYNmUQww
+                    :::mm-morimori
+                    歌声　うたごえ　Singing voice.
+                    :::mm-utagoe
+                        声　こえ　Voice
+                        :::mm-koe
+                        歌　うた　Song
+                        :::mm-uta
+                        [
+                            ACAねさんの歌声はきれいです
+                            ACA-ne-san's singing voice is beautiful.
+                        ]
+                        :::mm-acane-no-utagoe
+                    My favorite J-Pop band
+                    :::mm-liebe-zutomayo
+                    はゔぁ　Have a
+                    :::mm-hava
+                        [
+                            tell me tell me
+                            crunchy crunchy crunchy
+                            crunchy crunchy crunchy
+                            なあああああ
+                        ]
+                        :::mm-hava-crunchy
+                        Song has a really weird name with vu ゔ
+                        :::mm-vu
+                        物語　ものがたり　Story
+                        :::mm-monogatari
+                            [
+                                洞窟の物語
+                                どうくつのものがたり
+                                Cave Story https://en.wikipedia.org/wiki/Cave_Story
+                            ]
+                            :::mm-cavestory
+                    胸の煙　むねのけむり https://www.youtube.com/watch?v=wQPgM-9LatM
+                    :::mm-mune-no-kemuri
+                        [
+                            My favorite line:
+                            辛いより、もっと辛いより
+                            it's painful, more than painful
+                        ]
+                        :::mm-tsurai-yori
+                            辛い　つらい　painful or spicy
+                            :::mm-tsurai
+                                I saw this word in Japanese restaurants
+                                :::mm-tsurai-spotted
+                    花一匁 はないちもんめ
+                    :::mm-hana-ichi-monme
+                        [
+                            It's a game played by schoolchildren.
+                            Two teams play じゃんけん, rock paper scissors,
+                            against each other, one player at a time.
+                            There's also a song chanted between each round. https://m.youtube.com/watch?v=FdxspRjiEjs
+                        ]
+                        :::mm-hana-ichi-monme-desc
+                            宵々古今 よいよいここん by REOL also mentions this game https://www.youtube.com/watch?v=8IK6eLTNV1k
+                            :::mm-hana-yoiyoi-kokon
+                    こんなこと騒動 こんなことそうどう https://www.youtube.com/watch?v=mlA-Z7zSLHU
+                    :::mm-konna-koto-soudou
+                        [
+                            My favorite part of the song:
+                            いつしか現れる
+                            同じ熱の途方もない憂いにも
+                            いつしか助けられる
+                            まだ諦めの**悪い夢**に頼ってしまうから
+                        ]
+                        :::mm-endless-sorrow
+                            悪い　わるい　Bad.
+                            :::mm-warui
+                                ワルイージ　Waluigi gets his name from this word. https://mario.fandom.com/de/wiki/Waluigi
+                                :::mm-waruigi
+                            夢　ゆめ　Dream ###mm-yume-ni-ochiru
+                            :::mm-yume
+                    [
+                        ばかじゃないのに
+                        Even though I'm not stupid https://www.youtube.com/watch?v=YgmFIVOR1-I
+                    ]
+                    :::mm-baka-janai-noni
+                        ばか　Stupid https://www.youtube.com/watch?v=GNeyqFfXf7k
+                        :::mm-baka
+                        じゃない　Negating the adjective
+                        :::mm-janai
+                        「靴に石入っても」 Even if a stone gets into my shoes
+                        :::mm-kutsu-ni-ishi
+                            靴　くつ　Shoes
+                            :::mm-kutsu
+                                靴下　くつした　Socks
+                                :::mm-kutsushita
+                                上着　うわぎ　Jacket
+                                :::mm-uwagi
+                            に　Particle marking movement to something. Similar to nach
+                            :::mm-ni
+                            石　いし　Stone
+                            :::mm-ishi
+                            入って　Enter, go into
+                            :::mm-haitte
+                            も　Particle which has a meaning of also
+                            :::mm-mo
+                BTS
+                :::mm-bts
+                    They sing Japanese songs too, even though they're Korean https://www.youtube.com/watch?v=9IHwqdz8Xhw
+                    :::mm-bts-japanese-korean
         Youtubers
         :::mm-youtubers
             Kaname Naito

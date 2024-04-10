@@ -6,7 +6,7 @@
 <div class="mermaid-source">
     <a href="#">Source</a><br />
     <pre>
-        {{- .Inner | safeHTML }}
+        {{- replaceRE `:::(\S+)` `<a href="#$1">$0</a>` .Inner | safeHTML }}
     </pre>
 </div>
 {{ .Page.Store.Set "hasMermaid" true }}

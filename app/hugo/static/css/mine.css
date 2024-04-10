@@ -34,6 +34,18 @@ figure {
     fill: #00f!important;
 }
 
+@keyframes flash {
+    0% { fill: currentColor; }
+    50% { fill: #ff0; }
+    100% { fill: currentColor; }
+}
+
+.mermaid .mindmap-node.selected .node-bkg {
+    animation-name: flash;
+    animation-duration: .2s;
+    animation-iteration-count: 3;
+}
+
 .mermaid .section-root .node-bkg, .section-root polygon {
     fill: #f00!important;
 }
